@@ -2,6 +2,7 @@ export class AgeCalculator {
 
   constructor(age) {
     this.age = age;
+
   };
 
 
@@ -28,8 +29,10 @@ export class AgeCalculator {
     }
   };
 
-  yearsSince() {
-
+  yearsSince(birthdayPast) {
+    let mercuryPast;
+    mercuryPast = parseFloat((this.age - this.past/.24).toFixed(2));
+    return mercuryPast;
   }
 
 }

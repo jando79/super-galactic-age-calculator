@@ -3,9 +3,11 @@ import { AgeCalculator } from './../src/js/ageCalculator.js';
 
 describe('AgeCalculator', () => {
   let calculate;
+  let subtract;
 
   beforeEach(() => {
     calculate = new AgeCalculator(43);
+    subtract = new AgeCalculator(10);
   });
 
 
