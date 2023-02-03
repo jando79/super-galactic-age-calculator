@@ -24,12 +24,12 @@ export class AgeCalculator {
       case "Jupiter":
         jupiterAge = parseFloat((this.age/11.86).toFixed(2));
         return jupiterAge;
-      default:
-        return false;
+      //default:
+        //return false;
     }
   };
 
-  yearsSince(birthdayPast) {
+  yearsSince (planet) {
     let mercuryPast;
     mercuryPast = parseFloat(((this.age-this.past)/.24).toFixed(2));
     return mercuryPast;

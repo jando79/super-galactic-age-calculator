@@ -7,7 +7,7 @@ describe('AgeCalculator', () => {
 
   beforeEach(() => {
     calculate = new AgeCalculator(43);
-    subtract = new AgeCalculator(10);
+    subtract = new AgeCalculator(33);
   });
 
 
@@ -31,8 +31,8 @@ describe('AgeCalculator', () => {
     expect(calculate.calculator("Jupiter")).toEqual(3.63);
   });
 
-  //test ('it should calculate years since birthday in the past', () => {
-    //expect(subtract.yearsSince).toEqual(10);
+ // test ('it should calculate years since birthday in the past', () => {
+   // expect(subtract.yearsSince).toEqual(33);
   //});
 
   test ('it should correctly return difference in Mercury years', () => {
