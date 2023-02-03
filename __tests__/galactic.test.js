@@ -17,5 +17,9 @@ describe('AgeCalculator', () => {
     expect(calculate.calculator("Mercury")).toEqual(179.17);
   });
 
-  
+  test ('it should correctly return age in Venus years', () => {
+    expect(calculate.calculator("Venus")).toEqual(69.35);
+  })
+
+
  });
