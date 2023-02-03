@@ -28,4 +28,8 @@ export class AgeCalculator {
     }
   };
 
+  yearsSince(planet2) {
+
+  }
+
 }

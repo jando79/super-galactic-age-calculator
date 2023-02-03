@@ -29,6 +29,8 @@ describe('AgeCalculator', () => {
     expect(calculate.calculator("Jupiter")).toEqual(3.63);
   });
 
-
+  test ('it should return years since birthday in the past', () => {
+    expect(calculate.yearsSince).toEqual(10);
+  });
 
  });
