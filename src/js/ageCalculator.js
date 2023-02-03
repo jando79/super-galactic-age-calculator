@@ -28,7 +28,7 @@ export class AgeCalculator {
     }
   };
 
-  yearsSince(planet2) {
+  yearsSince() {
 
   }
 
