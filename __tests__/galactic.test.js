@@ -25,5 +25,9 @@ describe('AgeCalculator', () => {
     expect(calculate.calculator("Mars")).toEqual(22.87);
   });
 
+  test ('it should correctly return age in Jupiter years', () => {
+    expect(calculate.calculator("Jupiter")).toEqual(3.63);
+  });
+
 
  });
