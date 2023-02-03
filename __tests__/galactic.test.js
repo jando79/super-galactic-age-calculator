@@ -36,7 +36,7 @@ describe('AgeCalculator', () => {
   //});
 
   test ('it should correctly return difference in Mercury years', () => {
-    expect(subtract.yearsSince("Mercury")).toEqual(41.67);
+    expect(subtract.yearsSince("Mercury")).toBe(41.67);
   });
 
  });
