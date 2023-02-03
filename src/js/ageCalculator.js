@@ -5,5 +5,8 @@ export class AgeCalculator {
   }
 
 
+  calculator(planet) {
+    
+  }
 
 }
