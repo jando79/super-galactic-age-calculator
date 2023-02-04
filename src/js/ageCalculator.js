@@ -27,12 +27,11 @@ export class AgeCalculator {
       //default:
         //return false;
     }
-  };
+  }; 
 
-  yearsSince() {
+  yearsSince(sinceBirthday) {
     let mercuryPast;
-
-    mercuryPast = parseFloat((this.age - this.past/.24).toFixed(2));
+    mercuryPast = parseFloat(((this.age - this.past)/.24).toFixed(2));
       return mercuryPast;
   }
 

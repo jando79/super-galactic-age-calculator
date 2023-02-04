@@ -4,7 +4,7 @@
 
 #### _Description_
 
-_A web application that..._
+_A web application that calculates the users age on Mercury, Venus, Mars, and Jupiter in relation to their age on Earth_
 
 ## Technologies Used
 
@@ -25,7 +25,7 @@ _A web application that..._
 
 ## Known Bugs
 
-* NA
+* N/A
 
 ## License
 
