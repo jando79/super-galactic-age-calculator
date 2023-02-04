@@ -8,37 +8,32 @@ export class AgeCalculator {
 
   calculator(planet) {
     let mercuryAge;
-   // let mercuryPast;
     let venusAge;
-    //let venusPast;
     let marsAge;
-    //let marsPast;
     let jupiterAge;
-    //let jupiterPast;
     switch(planet) {
       case "Mercury":
         mercuryAge = parseFloat((this.age/.24).toFixed(2));
-        //mercuryPast = parseFloat(((this.age - this.past)/.24).toFixed(2));
-          return mercuryAge //&& mercuryPast;
+          return mercuryAge;
       case "Venus":
         venusAge = parseFloat((this.age/.62).toFixed(2));
-        //venusPast = parseFloat((this.age - this.past)/.62(2));
-          return venusAge //&& venusPast;
+          return venusAge;
       case "Mars":
         marsAge = parseFloat((this.age/1.88).toFixed(2));
-        //marsPast = parseFloat(((this.age - this.past)/1.88).toFixed(2));
-          return marsAge //&& marsPast;
+          return marsAge; 
       case "Jupiter":
         jupiterAge = parseFloat((this.age/11.86).toFixed(2));
-        //jupiterPast = parseFloat(((this.age - this.past)/11.86).toFixed(2));
-        return jupiterAge //&& jupiterPast;
+        return jupiterAge; 
       //default:
         //return false;
     }
   };
 
-  yearsSince(difference) {
-    let mercuryPast = parseFloat((this.age - this.past/.24).toFixed(2));
+  yearsSince() {
+    let mercuryPast;
+
+    mercuryPast = parseFloat((this.age - this.past/.24).toFixed(2));
+      return mercuryPast;
   }
 
 }
