@@ -3,7 +3,7 @@ import { AgeCalculator } from './../src/js/ageCalculator.js';
 describe('AgeCalculator', () => {
    let calculate;
    beforeEach(() => {
-    calculate = new AgeCalculator(43, 33, 53);
+    calculate = new AgeCalculator(43, 33, 68);
     calculate.calculator
   });
 
@@ -30,20 +30,27 @@ describe('AgeCalculator', () => {
 
 
 
-  test ('it should correctly return age difference of ten earth years, in Mercury years', () => {
+  test ('it should correctly return ten years less age difference in Mercury years', () => {
     expect(calculate.yearsSince("Mercury")).toBe(41.67);
   });
 
-  test ('it should correctly return age difference of ten earth years, in Venus years', () => {
+  test ('it should correctly return ten years less age difference in Venus years', () => {
     expect(calculate.yearsSince("Venus")).toBe(16.13);
   });
 
-  test ('it should correctly return age difference of ten earth years, in Mars years', () => {
+  test ('it should correctly return ten years less age difference in Mars years', () => {
     expect(calculate.yearsSince("Mars")).toBe(5.32);
   });
 
-  test ('it should correctly return age difference of ten earth years, in Jupiter years', () => {
+  test ('it should correctly return ten years less age difference in Jupiter years', () => {
     expect(calculate.yearsSince("Jupiter")).toBe(0.84);
   });
+
+  
+  test ('it should correctly return twenty-five years more age difference in Mercury years', () => {
+    expect(calculate.yearsUntil("Mercury")).toBe(104.17);
+  });
+
+  
 
  });

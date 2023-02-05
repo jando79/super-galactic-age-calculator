@@ -49,4 +49,10 @@ export class AgeCalculator {
     }
   };
 
+  yearsUntil (planetUntil) {
+    let mercuryUntil;
+      // mercuryUntil = parseFloat(((this.future - this.age) /.24).toFixed);
+      //   return mercuryUntil;
+  }
+
 }
