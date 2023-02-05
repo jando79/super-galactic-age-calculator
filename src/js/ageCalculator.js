@@ -1,8 +1,9 @@
 export class AgeCalculator {
 
-  constructor(age, past) {
+  constructor(age, past, future) {
     this.age = age;
     this.past = past;
+    this.future = future;
   };
 
 
@@ -29,10 +30,11 @@ export class AgeCalculator {
     }
   }; 
 
-  yearsSince(sinceBirthday) {
-    let mercuryPast;
-    mercuryPast = parseFloat(((this.age - this.past)/.24).toFixed(2));
+  yearsSince (planetSince) {
+
+    let mercuryPast = parseFloat(((this.age - this.past) /.24).toFixed(2));
       return mercuryPast;
   }
 
 }
+
