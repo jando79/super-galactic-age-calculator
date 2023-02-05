@@ -48,11 +48,11 @@ describe('AgeCalculator', () => {
 
   
   test ('it should correctly return twenty-five years more age difference in Mercury years', () => {
-    expect(calculate.yearsUntil()).toBe(104.17);
+    expect(calculate.yearsUntil("Mercury")).toBe(104.17);
   });
 
   test ('it should correctly return twenty-five years more age difference in Venus years', () => {
-    expect(calculate.yearsUntil()).toBe(40.32);
+    expect(calculate.yearsUntil("Venus")).toBe(40.32);
   });
 
  });
