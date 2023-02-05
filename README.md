@@ -4,7 +4,7 @@
 
 #### _Description_
 
-_A web application that calculates the users age on Mercury, Venus, Mars, and Jupiter in relation to their age on Earth_
+_A web application that calculates the user's age on Mercury, Venus, Mars, and Jupiter in relation to their age on Earth.  The app also calculates years since a past birthday, and years until a future birthday._
 
 ## Technologies Used
 
