@@ -31,6 +31,7 @@ export class AgeCalculator {
   yearsSince (planetSince) {
     let mercuryPast;
     let venusPast;
+    let marsPast;
     switch(planetSince) {
     case "Mercury":
       mercuryPast = parseFloat(((this.age - this.past) /.24).toFixed(2));
@@ -38,6 +39,9 @@ export class AgeCalculator {
     case "Venus":
       venusPast = parseFloat(((this.age - this.past) /.62).toFixed(2));
         return venusPast;
+    case "Mars":
+      marsPast = parseFloat(((this.age - this.past) /1.88).toFixed(2));
+        return marsPast;
   }
 
 }
