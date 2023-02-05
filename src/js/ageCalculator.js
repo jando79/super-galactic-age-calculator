@@ -25,8 +25,6 @@ export class AgeCalculator {
       case "Jupiter":
         jupiterAge = parseFloat((this.age/11.86).toFixed(2));
         return jupiterAge; 
-      //default:
-        //return false;
     }
   }; 
 

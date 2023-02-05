@@ -38,4 +38,8 @@ describe('AgeCalculator', () => {
     expect(calculate.yearsSince("Venus")).toBe(16.13);
   });
 
+  test ('it should correctly return age difference of ten earth years, in Mars years', () => {
+    expect(calculate.yearsSince("Mars")).toBe(5.32);
+  });
+
  });
