@@ -59,4 +59,8 @@ describe('AgeCalculator', () => {
     expect(calculate.yearsUntil("Mars")).toBe(13.30);
   });
 
+  test ('it should correctly return twenty-five years more age difference in Jupiter years', () => {
+    expect(calculate.yearsUntil("Jupiter")).toBe(2.11);
+  });
+
  });

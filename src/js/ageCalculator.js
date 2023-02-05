@@ -63,6 +63,7 @@ export class AgeCalculator {
     case "Mars":
       marsUntil = parseFloat(((this.future - this.age) /1.88).toFixed(2));
         return marsUntil;
+    
 
     }
   }
