@@ -42,4 +42,8 @@ describe('AgeCalculator', () => {
     expect(calculate.yearsSince("Mars")).toBe(5.32);
   });
 
+  test ('it should correctly return age difference of ten earth years, in Jupiter years', () => {
+    expect(calculate.yearsSince("Jupiter")).toBe(0.84);
+  });
+
  });

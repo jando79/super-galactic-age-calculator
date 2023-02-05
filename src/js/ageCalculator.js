@@ -42,8 +42,10 @@ export class AgeCalculator {
     case "Mars":
       marsPast = parseFloat(((this.age - this.past) /1.88).toFixed(2));
         return marsPast;
-  }
-
-}
+    case "Jupiter":
+      jupiterPast = parseFloat(((this.age - this.past) /11.86).toFixed(2));
+        return jupiterPast;
+    }
+  };
 
 }
