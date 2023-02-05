@@ -28,12 +28,14 @@ describe('AgeCalculator', () => {
     expect(calculate.calculator("Jupiter")).toEqual(3.63);
   });
 
- //test ('it should correctly return a new subtraction calculation with age property', () => {
-   //expect(subtract.yearsSince).toEqual(10);
- // });
+
 
   test ('it should correctly return age difference of ten earth years, in Mercury years', () => {
-    expect(calculate.yearsSince()).toBe(41.67);
+    expect(calculate.yearsSince("Mercury")).toBe(41.67);
+  });
+
+  test ('it should correctly return age difference of ten earth years, in Venus years', () => {
+    expect(calculate.yearsSince("Venus")).toBe(16.13);
   });
 
  });

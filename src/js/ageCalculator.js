@@ -31,10 +31,14 @@ export class AgeCalculator {
   }; 
 
   yearsSince (planetSince) {
-
-    let mercuryPast = parseFloat(((this.age - this.past) /.24).toFixed(2));
-      return mercuryPast;
+    let mercuryPast
+    switch(planetSince) {
+    case "Mercury":
+      mercuryPast = parseFloat(((this.age - this.past) /.24).toFixed(2));
+        return mercuryPast;
+    
   }
 
 }
 
+}
