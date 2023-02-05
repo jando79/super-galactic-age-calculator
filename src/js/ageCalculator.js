@@ -50,8 +50,16 @@ export class AgeCalculator {
   };
 
   yearsUntil (planetUntil) {
-    let mercuryUntil = parseFloat(((this.future - this.age) /.24).toFixed(2));
+    let mercuryUntil;
+    let venusUntil;
+    switch (planetUntil) {
+    case "Mercury":
+      mercuryUntil = parseFloat(((this.future - this.age) /.24).toFixed(2));
         return mercuryUntil;
+    case "Venus":
+      //venusUntil = parseFloat(((this.future - this.age) /.62).toFixed(2))
+
+    }
   }
 
 }

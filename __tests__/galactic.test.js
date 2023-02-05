@@ -51,6 +51,8 @@ describe('AgeCalculator', () => {
     expect(calculate.yearsUntil()).toBe(104.17);
   });
 
-
+  test ('it should correctly return twenty-five years more age difference in Venus years', () => {
+    expect(calculate.yearsUntil()).toBe(40.32);
+  });
 
  });
